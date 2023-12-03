@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; /*sous forme d'une liste */
+    font-family: 'Josefin Sans', sans-serif; /*forme du texte*/
+}
+
+html::-webkit-scrollbar-thumb{ /* toul scroll elli ytalla3 w yhabbet fl*/
+    background: #3ae21c;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+body{
+    background: #1c0a51;
+}
+
+
+
+
+/* Packages  Start */
+.packages{
+    padding: 100px 8% 100px;
+}
+.packages .txt{
+    text-align: center;
+}
+.packages .txt h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f4f5fb;
+    text-shadow: 0px 1px 1px black;
+}
+.packages .ii{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+.packages .ii .row{
+    background: #f4f5fb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.packages .row img{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+.packages .kk{
+    padding: 10px;
+}
+.packages .kk h3{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+.packages .kk p{
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.packages .kk h5{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.packages .kk button{
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #1c0a51;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.packages .kk button:hover{
+    background: #1c0a51;
+    color: #f4f5fb;
+}
+
+/* Packages  End */
+
+
+
+
+
+/* Footer Start */
+.spann{
+    color: #e21c9d;
+    text-shadow: 1px 2px black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+#footer{
+    width: 100%;
+    padding: 50px 8% 50px;
+    background-color: #5730cd;
+    box-shadow: 10px 10px 10px 10px #f4f5fb;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+#footer-logo{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 2px black;
+}
+#footer #row1 p{
+    color: #f4f5fb;
+    margin-top: 10px;
+}
+
+#row2 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb; /* hr*/
+}
+
+#row2 ul li{
+    margin-top: 8px;
+}
+#row2 ul li a{
+    color: #f4f5fb;
+}
+#row2 li a:hover{
+    border-bottom: 1px solid #f4f5fb;
+}
+
+#row4 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb;
+}
+#row4 img{
+    width: 180px;
+    cursor: pointer;
+}
+/* Footer End */

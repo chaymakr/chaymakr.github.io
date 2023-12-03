@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; /*sous forme d'une liste */
+    font-family: 'Josefin Sans', sans-serif; /*forme du texte*/
+}
+
+html::-webkit-scrollbar-thumb{ /* toul scroll elli ytalla3 w yhabbet fl*/
+    background: #3ae21c;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+body{
+    background: #1c0a51;
+}
+
+/* Header Start */
+.header{
+    background: transparent;
+    width: 100%;
+}
+.header nav{
+    position: relative;
+    max-width: calc(100% - 200px);/* tet7akem f les button win yjiw*/
+    margin: 0 auto;
+}
+nav .content{
+    display: flex;
+}
+nav .content .links{
+    margin-left: 80px;
+    display: flex;
+}
+
+nav .content .links li{
+    line-height: 70px; /*3or4 hekom elli fihom l button*/
+}
+nav .content .links li a,
+nav .content .links li label{
+    color: #f4f5fb; /*couleur de texte button*/
+    font-size: 18px; 
+    padding: 9px 17px; 
+    font-weight: bold; /*texte en gras*/
+    border-radius: 5px; /*forme button*/
+    transition: all 0.3s ease; /*temps 0.3s ki tcliqui 3al button*/
+}
+.content .links li label{
+    display: none;
+}
+nav .content .links li a:hover{
+    color: #1c0a51;
+    background: #f4f5fb;
+}
+
+/* Header End */
+
+
+/* Home  Start */
+.x{
+    color: black;
+    text-shadow: 1px 2px #28ad7c;
+    font-weight: bold;
+}
+.home{
+    height: 95vh; /*kobr*/
+    background-image: url(./images/b1.jpg);
+    background-size:cover;
+}
+.home .text{
+    text-align: center;
+    padding: 200px ;
+}
+.text h3{
+    font-size: 50px;
+    color: rgb(208, 113, 126);
+    text-shadow: 5px 5px 10px black;
+}
+.home .text p{
+    color: #ffffff;
+
+}
+#btn{ /* # id*/
+    margin-top: 20px;
+    padding: 6px;
+    background: #1c0a51;
+    color: #f4f5fb;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; /*ki t7ot el souris 3al button yettenzel*/
+}
+
+/* Home  End */
+
+
+/* Services  Start */
+.services{
+    padding: 100px 10% 120px;
+}
+.services .ha{
+    text-align: center;
+}
+.services .ha h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.services .ca{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0.90rem; /*l'espace binethom*/
+    margin-top: 50px;
+}
+.services .ca .row{
+    background: #8b81a7;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services .aa h3{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.services .aa p{
+    color: #f4f5fb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Services  End */
+
+
+
+/* About  Start */
+.about{
+    padding: 100px 8% 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*grid size of column wl repeat function t3awed size de column*/
+    align-items: center;
+}
+.about-img img{
+    max-width: 530px;
+}
+.about-info h3{
+    color: #f4f5fb;
+    font-size: 30px;
+}
+.about-info h6{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #f4f5fb;
+}
+.about-info p{
+    color: #f4f5fb;
+    letter-spacing: 1px; /*espace bin lettres*/
+    margin-bottom: 4rem;    
+    margin-top: 25px;
+}
+.about-btn{
+    width: 150px;
+    height: 36px;
+    font-weight: bold; /*en gras*/
+    background: #f4f5fb;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.about-btn:hover{
+    width: 165px;
+}
+
+/* About  End */
+
+
+
+
+
+/* Gallary  Start */
+.gallary{
+    padding: 120px 10% 120px;
+}
+.gallary .heading h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #f4f5fb;
+}
+.gallary-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    margin-top: 30px;
+}
+.gallary-card .row img{
+    width: 200px;
+    padding: 10px;
+    display: block;
+    border-radius: 15px;    
+    transition: 0.5s;
+    cursor: pointer;
+}
+.gallary-card .row img:hover{
+    transform: translateY(-10px);
+}
+
+/* Gallary  End */
+
+
+
+
+
+/* Packages  Start */
+.packages{
+    padding: 100px 8% 100px;
+}
+.packages .txt{
+    text-align: center;
+}
+.packages .txt h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f4f5fb;
+    text-shadow: 0px 1px 1px black;
+}
+.packages .ii{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+.packages .ii .row{
+    background: #f4f5fb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.packages .row img{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+.packages .kk{
+    padding: 10px;
+}
+.packages .kk h3{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+.packages .kk p{
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.packages .kk h5{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.packages .kk button{
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #1c0a51;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.packages .kk button:hover{
+    background: #1c0a51;
+    color: #f4f5fb;
+}
+
+/* Packages  End */
+
+
+
+
+
+/* Book  Start */
+.book{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 100px 10% 100px;
+}
+.book-img img{
+    box-shadow: 0px 5px 5px -6px black;
+    width: 100%;
+    display: block;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.book-form form{
+    position: relative;
+}
+.book-form h5{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #f4f5fb;
+}
+.book-form form input,
+form textarea{
+    width: 100%;
+    padding: 15px;
+    background: #f4f5fb;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    margin-bottom: 10px;
+}
+
+.book-form .submit{
+    font-size: 16px;
+    font-weight: 600;
+    background: #f4f5fb;
+    color: black;
+    width: 160px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.book-form .submit:hover{
+    width: 175px;
+}
+
+/* Book  End */
+
+
+
+
+
+/* Review Start */
+.reviews{
+    padding: 120px 10% 120px;
+}
+.reviews .rv h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: #f4f5fb;
+}
+.reviews .vv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 1rem; /*space between*/
+    margin-top: 30px;
+}
+.reviews .row{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    background: #f4f5fb;
+    cursor: pointer;
+}
+.reviews h5{
+    padding: 20px;
+    font-size: 17px;
+    text-shadow: 0px 1px 1px black;
+}
+.reviews h5 img{
+    width: 50px;
+    border-radius: 50%;
+}
+.reviews p{
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+/* Review End */
+
+
+
+
+
+/* Contact Start */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 100px 8% 100px;
+}
+.contact-text h2{
+    color: #f4f5fb;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+span {
+    color: rgb(210, 25, 25);
+    text-shadow: 0px 2px 3px rgb(205, 255, 213);
+}
+.contact-text p{
+    font-weight: bold;
+    color: #f4f5fb;
+}
+.list{
+    margin-top: 20px;
+}
+.list li{
+    margin-bottom: 15px;
+}
+.list li a{
+    color: #f4f5fb;
+    font-weight: bold;
+}
+
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    background: rgb(194, 195, 199);
+    color: rgb(210, 25, 25);
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    height: 160px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 15px;
+    background: #f4f5fb;
+    color: black;
+    width: 160px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.contact-form .submit:hover{
+    width: 175px;
+}
+
+/* Contact  End */
+
+
+/* Footer Start */
+.spann{
+    color: #e21c9d;
+    text-shadow: 1px 2px black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+#footer{
+    width: 100%;
+    padding: 50px 8% 50px;
+    background-color: #5730cd;
+    box-shadow: 10px 10px 10px 10px #f4f5fb;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+#footer-logo{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 2px black;
+}
+#footer #row1 p{
+    color: #f4f5fb;
+    margin-top: 10px;
+}
+
+#row2 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb; /* hr*/
+}
+
+#row2 ul li{
+    margin-top: 8px;
+}
+#row2 ul li a{
+    color: #f4f5fb;
+}
+#row2 li a:hover{
+    border-bottom: 1px solid #f4f5fb;
+}
+
+#row4 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb;
+}
+#row4 img{
+    width: 180px;
+    cursor: pointer;
+}
+/* Footer End */

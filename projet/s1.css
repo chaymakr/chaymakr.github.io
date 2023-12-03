@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; /*sous forme d'une liste */
+    font-family: 'Josefin Sans', sans-serif; /*forme du texte*/
+}
+
+html::-webkit-scrollbar-thumb{ /* toul scroll elli ytalla3 w yhabbet fl*/
+    background: #3ae21c;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+body{
+    background: #1c0a51;
+}
+
+
+
+/* Services  Start */
+.services{
+    padding: 100px 10% 120px;
+}
+.services .ha{
+    text-align: center;
+}
+.services .ha h3{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.services .ca{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0.90rem; /*l'espace binethom*/
+    margin-top: 50px;
+}
+.services .ca .row{
+    background: #8b81a7;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services .aa h3{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.services .aa p{
+    color: #f4f5fb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Services  End */
+
+
+
+/* Footer Start */
+.spann{
+    color: #e21c9d;
+    text-shadow: 1px 2px black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+#footer{
+    width: 100%;
+    padding: 50px 8% 50px;
+    background-color: #5730cd;
+    box-shadow: 10px 10px 10px 10px #f4f5fb;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+#footer-logo{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0px 2px black;
+}
+#footer #row1 p{
+    color: #f4f5fb;
+    margin-top: 10px;
+}
+
+#row2 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb; /* hr*/
+}
+
+#row2 ul li{
+    margin-top: 8px;
+}
+#row2 ul li a{
+    color: #f4f5fb;
+}
+#row2 li a:hover{
+    border-bottom: 1px solid #f4f5fb;
+}
+
+#row4 h3{
+    font-size: 18px;
+    color: #f4f5fb;
+    border-bottom: 2px solid #f4f5fb;
+}
+#row4 img{
+    width: 180px;
+    cursor: pointer;
+}
+/* Footer End */
