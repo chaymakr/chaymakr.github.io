@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website </title>
+    <link rel="shortcut icon" type="x-icon" href="images/phto.jpg">
+    <link rel="stylesheet" href="s.css">
+
+    <script>
+        function allerBook() {
+            location.href = "#book";
+        }
+   
+function afficherMessage() {
+    var nom = document.forms[1].nom.value;
+
+    alert("Bienvenu " + nom + " vous êtes inscrit dans notre agence !");
+    
+    return false; 
+}
+</script>
+
+</head>
+
+<body>
+  
+<header>
+        <nav>
+            <div class="content">
+
+                <div class="logo">
+                    <div class="logo"><a href="home.html"><img src="/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+<section class="home" id="home" >
+    <div class="text">
+        <h3>Travel The World
+            <br> & Explore The New Destination
+        </h3>
+    
+    <p>The best online travel agency in 2025</p>
+    <nav>
+        <a href="#home"> <button id="btn">HOME</button></a>
+        <a href="#services"> <button id="btn">SERVICES</button></a>
+        <a href="#about"> <button id="btn">ABOUT</button></a>
+        <a href="#packages"> <button id="btn">PACKAGES</button></a>
+        <a href="#book"> <button id="btn">BOOK</button></a>
+        <a href="#reviews"> <button id="btn">REVIEWS</button></a>
+        <a href="#contact"> <button id="btn">CONTACT</button></a>
+    </nav> <br><br> 
+    <p>Created By: <span class="x">CHAYMA KRAIEM</span></p>
+
+</div>
+</section>
+
+
+<section class="packages" id="packages">
+    <div class="txt">
+        <h3>Packages</h3>
+    </div>
+
+    <div class="ii">
+        <div class="row">
+            <img src="./images/united state.png" alt="">
+            <div class="kk">
+                <h3>United States</h3>
+                <p>The best hotels in USA</p>
+                <h5>Price: 5340DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/jordan.png" alt="">
+            <div class="kk">
+                <h3>Jordan</h3>
+                <p>The best hotels in JORDAN</p>
+                <h5>Price: 3944DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/china.png" alt="">
+            <div class="kk">
+                <h3>China</h3>
+                <p>The best hotels in CHINA</p>
+               
+                <h5>Price: 4223DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/Mexico.png" alt="">
+            <div class="kk">
+                <h3>Mexico</h3>
+                <p>The best hotels in MEXICO</p>
+    
+                <h5>Price: 3266DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/france.png" alt="">
+            <div class="kk">
+                <h3>France</h3>
+                <p>The best hotels in FRANCE</p>
+              
+                <h5>Price: 2029DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/Greece.png" alt="">
+            <div class="kk">
+                <h3>Greece</h3>
+                <p>The best hotels in GREECE</p>
+               
+                <h5>Price: 3155DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/Spain.png" alt="">
+            <div class="kk">
+                <h3>Spain</h3>
+                <p>The best hotels in SPAIN</p>
+                
+                <h5>Price: 3409DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./images/Turkey.png" alt="">
+            <div class="kk">
+                <h3>Turkey</h3>
+                <p>The best hotels in TURKEY</p>
+                
+                <h5>Price: 1597DT</h5>
+                <button onclick="allerBook()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+    <section class="book" id="book">
+        <div class="book-img">
+            <img src="./images/book-img.png" alt="">
+        </div>
+        <div class="book-form">
+            <h5>BOOK YOUR DESTINATION</h5>
+            <form action="#">
+                <input type="text" placeholder="Where To" required>
+                <input type="text" placeholder="How Many" required>
+                <input type="date" placeholder="Arrivals" required>
+                <input type="date" placeholder="Leaving" required>
+                <textarea name="" id="" cols="5" rows="5" placeholder="Enter Your Name & Details"></textarea>
+                <input type="submit" value="Book Now" class="submit" required >
+            </form>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="rv">
+            <h3>What Custommers Say:</h3>
+        </div>
+        <div class="vv">
+            <div class="row">
+                <h5><img src="./images/OIP.jpg" alt="">CHAYMA</h5>
+                <p>This trip was incredible, from day one our tour guide was amazing ..
+                     caring and very knowledgeable!</p>
+
+            </div>
+            <div class="row">
+                <h5><img src="./images/OIP (1).jpg" alt="">SAMIHA</h5>
+                <p>"Traveling with kids can be a challenge, but thanks to Your Travel Agency, our family vacation was a huge success. </p>
+
+            </div>
+            <div class="row">
+                <h5><img src="./images/OIP2.JPG" alt="">MOHSEN</h5>
+                <p>"I've been a loyal customer of Your Travel Agency for years, and they never disappoint.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Get In <span>Touch</span> :</h2>
+            <p> You can contact us via phone, email, or by filling out the contact form on our website.
+                 We look forward to connecting with you and turning your travel dreams into reality !</p>
+            <div class="list">
+                <li><a href="#">+216 23 200 230</a></li>
+                <li><a href="#">TravelAgency@gmail.com</a></li>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form onsubmit="return afficherMessage()">
+    <input type="text" name="nom" placeholder="Name" required>
+    <input type="number" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" cols="35" rows="10" placeholder="Message" required></textarea>
+    <input type="submit" value="Send" class="submit" required>
+</form>
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="" id="row1">
+                <a href="#" id="footer-logo">Travel Agency</a>
+                <p>As you consider your next travel endeavor, remember that our Travel Agency is more than a service provider – we are
+                     your partners in exploration, your advocates for seamless journeys, and your companions in creating memories that last a lifetime</p>                
+                <br><br><br><p>Created By <span class="spann">CHAYMA KRAIEM</span> .</p>
+                    </div>
+            <div class="" id="row2">
+                <h3>UseFull Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="" id="row4">
+                <h3>Download App</h3>
+                <img src="./images/app.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>
